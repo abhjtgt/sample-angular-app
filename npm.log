@@ -1,0 +1,10 @@
+> npm build
+
+Unknown command: "build"
+
+Did you mean this?
+    npm run build # run the "build" package script
+
+To see a list of supported npm commands, run:
+  npm help
+Error: Process completed with exit code 1.
