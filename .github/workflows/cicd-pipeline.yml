@@ -36,4 +36,4 @@ jobs:
     - name: Test
       run: |
         echo "Running tests..."
-        npm test -- --browsers=Firefox --watch=false
+        npm test -- --browsers=FirefoxHeadless --watch=false
