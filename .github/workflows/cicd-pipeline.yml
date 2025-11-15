@@ -22,8 +22,11 @@ jobs:
         echo "Installing dependencies..."
         npm install
         
-    - uses: browser-actions/setup-firefox@v1
-    - run: firefox --version
+    - name: Setup Firefox
+      uses: browser-actions/setup-firefox@v1
+      
+    - name: check Firefox version
+      run: firefox --version
 
     - name: Test
       run: |
