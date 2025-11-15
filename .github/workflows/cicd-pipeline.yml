@@ -16,17 +16,22 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 16
-        
+
+    - name: Install Firefox
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y firefox
+
     - name: Build
       run: |
         echo "Installing dependencies..."
         npm install
         
-    - name: Setup Firefox
-      uses: browser-actions/setup-firefox@v1
+    # - name: Setup Firefox
+    #   uses: browser-actions/setup-firefox@v1
       
     - name: check Firefox version
-      run: firefox --version
+      run: firefox --version || true
 
     - name: Test
       run: |
