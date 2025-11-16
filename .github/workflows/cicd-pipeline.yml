@@ -25,7 +25,7 @@ jobs:
     - name: Setup Firefox
       uses: browser-actions/setup-firefox@v1
       with:
-        firefox-version: "144.0"
+        firefox-version: "143.0"
       
     - name: Build
       run: |
