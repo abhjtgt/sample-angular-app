@@ -24,14 +24,18 @@ jobs:
 
     - name: Setup Firefox
       uses: browser-actions/setup-firefox@v1
+      with:
+        firefox-version: 144
       
     - name: Build
       run: |
         echo "Installing dependencies..."
         npm install
         
-    - name: check Firefox version
-      run: firefox --version || true
+    - name: check env
+      run: | 
+        firefox --version || true
+        echo "PATH- $PATH"
 
     - name: Test
       run: |
