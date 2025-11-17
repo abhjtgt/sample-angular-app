@@ -48,7 +48,7 @@ jobs:
         pwd
         echo "PATH- $PATH"
         firefox --version || true
-        export FIREFOX_BIN=/home/abhijit/firefox/firefox
+        export FIREFOX_BIN=/home/abhijit/firefox
         firefox --version || true
 
     - name: Test
