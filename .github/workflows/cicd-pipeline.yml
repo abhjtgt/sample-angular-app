@@ -52,7 +52,7 @@ jobs:
 
     - name: Test
       run: |
-        export FIREFOX_BIN=/home/abhijit/firefox
+        export FIREFOX_BIN=/home/abhijit/firefox/firefox
         $FIREFOX_BIN/firefox --version || true
         echo "Running tests..."
         npm test -- --browsers=FirefoxHeadless --watch=false
