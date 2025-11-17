@@ -37,6 +37,8 @@ jobs:
         whoami
         pwd
         echo "PATH- $PATH"
+        export PATH=$PATH:/home/abhijit/firefox
+        echo "PATH- $PATH"
         firefox --version || true
 
     - name: Test
