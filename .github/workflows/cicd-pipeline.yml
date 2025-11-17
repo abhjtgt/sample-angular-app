@@ -47,9 +47,10 @@ jobs:
         whoami
         pwd
         echo "PATH- $PATH"
+        export PATH=$PATH:/home/abhijit/firefox
         firefox --version || true
-        export FIREFOX_BIN=/home/abhijit/firefox
-        $FIREFOX_BIN/firefox --version || true
+        # export FIREFOX_BIN=/home/abhijit/firefox
+        # $FIREFOX_BIN/firefox --version || true
 
     - name: Test
       run: |
