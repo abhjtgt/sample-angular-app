@@ -47,12 +47,12 @@ jobs:
         whoami
         pwd
         echo "PATH- $PATH"
-        # export FIREFOX_BIN=/home/abhijit/firefox
-        # $FIREFOX_BIN/firefox --version || true
+        # export PATH=$PATH:/home/abhijit/firefox
+        # firefox --version || true
 
     - name: Test
       run: |
-        export PATH=$PATH:/home/abhijit/firefox
-        firefox --version || true
+        export FIREFOX_BIN=/home/abhijit/firefox
+        $FIREFOX_BIN/firefox --version || true
         echo "Running tests..."
         npm test -- --browsers=FirefoxHeadless --watch=false
