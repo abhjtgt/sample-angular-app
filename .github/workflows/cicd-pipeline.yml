@@ -49,7 +49,7 @@ jobs:
         echo "PATH- $PATH"
         firefox --version || true
         export FIREFOX_BIN=/home/abhijit/firefox
-        firefox --version || true
+        $FIREFOX_BIN/firefox --version || true
 
     - name: Test
       run: |
