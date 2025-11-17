@@ -22,10 +22,10 @@ jobs:
     #     sudo apt-get update
     #     sudo apt-get install -y firefox
 
-    - name: Setup Firefox
-      uses: browser-actions/setup-firefox@v1
-      with:
-        firefox-version: "142.0"
+    # - name: Setup Firefox
+    #   uses: browser-actions/setup-firefox@v1
+    #   with:
+    #     firefox-version: "142.0"
       
     - name: Build
       run: |
